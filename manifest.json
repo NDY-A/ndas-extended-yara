@@ -1,0 +1,87 @@
+{
+  "name": "Microsoft Defender pattern signatures (converted to YARA)",
+  "source": "Windows Defender VDM 1.463.386.0 (mpavbase+mpavdlta), offline extraction",
+  "converter": "defender2yara 1.0.4",
+  "filtered_out": "SIGNATURE_TYPE_CMDHSTR_EXT (2,907 rules); credential-like literals excluded from publication",
+  "total_rules": 96881,
+  "generated_at": "2026-11-20T16:01:13Z",
+  "notes": [
+    "Conversion approximates Defender scoring; false positives are expected.",
+    "Rules with detection_name starting with '!#' are converter artifacts (internal engine directives); filter them when consuming.",
+    "Rules embedding credential-like literals were removed to avoid publishing harvested secrets.",
+    "Derived from Microsoft signature data; evaluate redistribution licensing before production use.",
+    "NDAS 0.0.14.0a+ 的更新器从本仓库 main 分支根目录获取 manifest.json 与分片，并按 SHA-256 校验；旧版本仍使用 NDY-A/malware-egress-blocklist 的 data/yara/defender/。"
+  ],
+  "files": [
+    {
+      "name": "defender-patterns-part01.yara",
+      "bytes": 8388218,
+      "sha256": "f16eb3a8ea7db0914f14978060077f1e73d0af499fd0a83d55d5668f630d83a1"
+    },
+    {
+      "name": "defender-patterns-part02.yara",
+      "bytes": 8388188,
+      "sha256": "b2d7fd2dd3f06eccc6fd13ee07ed680e8aeabbf005aa49b5452ef233dbc94c32"
+    },
+    {
+      "name": "defender-patterns-part03.yara",
+      "bytes": 8388535,
+      "sha256": "1df6a4e084fd09697bd0771a4e2fbda5a18e4e65d0f1902984384c1bb72c1a9d"
+    },
+    {
+      "name": "defender-patterns-part04.yara",
+      "bytes": 8387774,
+      "sha256": "a60457abe0afadaca65c5f1a4bca0be27232da53ce8934e364beb3bd8dfb8585"
+    },
+    {
+      "name": "defender-patterns-part05.yara",
+      "bytes": 8387956,
+      "sha256": "08c21244523c8375b2fe5e5a846e035461ba6fa4d15b7d7b733c52c6de9cb17e"
+    },
+    {
+      "name": "defender-patterns-part06.yara",
+      "bytes": 1263012,
+      "sha256": "24117d707581a9811aa64edc90de742f0b369d7e64f28c0dda626476ea0f0cd7"
+    },
+    {
+      "name": "defender-patterns-part07.yara",
+      "bytes": 8388407,
+      "sha256": "c200191a738cea8960be762432fc1b93488fb3565e4519413783b0ee7b62acfb"
+    },
+    {
+      "name": "defender-patterns-part08.yara",
+      "bytes": 8388107,
+      "sha256": "dd2c4a3dae14c2504f129abe39a6baeee9e7274e18ca1f6a28bbb1c802cddeec"
+    },
+    {
+      "name": "defender-patterns-part09.yara",
+      "bytes": 8388507,
+      "sha256": "a7e66457e080cb0f32b9145badc2fa57d484272d3eb7a5be89b067e9adcf3d11"
+    },
+    {
+      "name": "defender-patterns-part10.yara",
+      "bytes": 8387814,
+      "sha256": "b7bac0784da6560cae9d067334e9cda03e665634dae1848b45992b9cc3a3166c"
+    },
+    {
+      "name": "defender-patterns-part11.yara",
+      "bytes": 8387625,
+      "sha256": "6835476bd72ed211f3ac52a0da985a248ef77253004c2b15229e575f90de89a3"
+    },
+    {
+      "name": "defender-patterns-part12.yara",
+      "bytes": 8388387,
+      "sha256": "8f6314bcd7e769fce8863a05ef811daa49ebee65bb011993e152ca103f427ba4"
+    },
+    {
+      "name": "defender-patterns-part13.yara",
+      "bytes": 8388123,
+      "sha256": "6dbdda70b07c3404470af527382158d5594edc870bdf778cc57df731db0541e8"
+    },
+    {
+      "name": "defender-patterns-part14.yara",
+      "bytes": 1140175,
+      "sha256": "8fbf6be9dab9b01049b123423347666306c9e57ddda989b9e01856a7dcb56e8f"
+    }
+  ]
+}
